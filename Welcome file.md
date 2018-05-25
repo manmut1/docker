@@ -112,7 +112,7 @@ Starte Cadvisor mit:</p>
 </code></pre>
 <p>Mit diesem Befehl loggt man sich ein:</p>
 <pre class=" language-sh"><code class="prism  language-sh">docker run -ti name:Version /bin/bash
-su athikatesting
+su manmuttesting
 </code></pre>
 <h1 id="eigener-container-erstellen">Eigener Container erstellen</h1>
 <ol>
@@ -120,17 +120,17 @@ su athikatesting
 <li>Im verzeichnis gehen, wo das Dockerfile ist</li>
 <li>Dockerfile builden:</li>
 </ol>
-<pre class=" language-sh"><code class="prism  language-sh">docker build -t athika .
+<pre class=" language-sh"><code class="prism  language-sh">docker build -t manmut .
 </code></pre>
 <ol start="4">
 <li>Dockerfile starten mit:</li>
 </ol>
-<pre class=" language-sh"><code class="prism  language-sh">docker run --rm -d --name athika athika
+<pre class=" language-sh"><code class="prism  language-sh">docker run --rm -d --name manmut manmut
 </code></pre>
 <ol start="5">
 <li>Funktionsfähigkeit überprüfen:</li>
 </ol>
-<pre class=" language-sh"><code class="prism  language-sh">docker exec -it athika bash
+<pre class=" language-sh"><code class="prism  language-sh">docker exec -it manmut bash
 </code></pre>
 <p>und im Container</p>
 <pre class=" language-sh"><code class="prism  language-sh">ps -ef
