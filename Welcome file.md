@@ -108,7 +108,7 @@ Starte Cadvisor mit:</p>
 </code></pre>
 <h3 id="docker-user-erstellen">Docker User erstellen</h3>
 <p>Erstelle ein User mit dem folgendem Befehl:</p>
-<pre class=" language-sh"><code class="prism  language-sh">RUN groupadd -r User_Group &amp;&amp; useradd -r -g User_group athikatesting
+<pre class=" language-sh"><code class="prism  language-sh">RUN groupadd -r User_Group &amp;&amp; useradd -r -g User_group manmut
 </code></pre>
 <p>Mit diesem Befehl loggt man sich ein:</p>
 <pre class=" language-sh"><code class="prism  language-sh">docker run -ti name:Version /bin/bash
@@ -134,6 +134,5 @@ su manmuttesting
 </code></pre>
 <p>und im Container</p>
 <pre class=" language-sh"><code class="prism  language-sh">ps -ef
-netstat -tulpen
 </code></pre>
 
